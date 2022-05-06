@@ -61,6 +61,7 @@ docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock --net jupyterhu
     RUN pip install jupyterlab notebook  
     RUN pip install dockerspawner
 
+    ### this has to be done on command line or?
     VOLUME /var/run/docker.sock:/var/run/docker.sock:rw
 
     VOLUME /usr/local/share/jupyterhub:/usr/local/share/jupyterhub:rw
